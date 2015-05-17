@@ -1,0 +1,522 @@
+
+
+body {
+	background: #f5f5f5; font-family: 'Montserrat', sans-serif; font-size: 12px; line-height: 24px; letter-spacing: 0.08em; color: #444; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, nav a, .widget h6, .filters li a, blockquote, p[data-pullquote]:before, input[type="submit"] {
+	font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-weight: 400;
+}
+
+h1, h2, h3 {
+	font-weight: 700;
+}
+
+h6 {
+	font-weight: 300;
+}
+
+small {
+	display: block; font-size: 12px; font-family: 'Montserrat', sans-serif; font-weight: normal; text-transform: none;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+a {
+	color: #444; text-decoration: none; border-bottom: 1px dotted #c5c5c5;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+p {
+	margin-bottom: 25px;
+}
+
+p a {
+	border: none;
+}
+
+p a:hover {
+	color: #c0392b;
+}
+
+a:hover, .social a:hover, .filters li:hover, .filters li.active, .filters li:hover a, .filters li.active a, p a {
+	color: #ed1849; border-color: #ed1849;
+}
+
+pre {
+	font-family: monospace;
+}
+
+nav a.active {
+	color: #ed1849;
+}
+
+p[data-pullquote] {
+  display: block;
+}
+
+p[data-pullquote]:before {
+  content: attr(data-pullquote);
+  float: left;
+  width: 60%;
+  padding: 0 20px 20px 0;
+  font-size: 14px;
+  max-width: 350px;
+}
+
+blockquote {
+	font-size: 16px; letter-spacing: 1px; padding: 25px 13% 10px; margin: 0 0 30px;
+}
+
+blockquote small {
+	display: inline-block; letter-spacing: 3px; margin: 0 0 0 20px; position: relative; top: -2px;
+}
+
+input, textarea {
+	width: 100%; background: #f5f5f5; border: 1px solid #c5c5c5; padding: 15px 20px; margin: 0 0 15px;
+}
+
+textarea {
+	min-height: 150px;
+}
+
+input[type="submit"] {
+	width: auto; cursor: pointer;
+}
+
+.wrapper {
+	margin: 50px auto;
+	width: 960px;
+	position: relative;
+	background: white;
+}
+
+img {
+	max-width: 100%; height: auto; vertical-align: bottom;
+}
+
+::selection {
+    background: #fefac7; /* Safari */
+    color: #555555;
+}
+::-moz-selection {
+    background: #fefac7; /* Firefox */
+    color: #555555;
+}
+
+sup, sub {
+	position: relative; font-size: 80%; line-height: 0; vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	top: 0.5em;
+}
+
+
+
+hr {
+	margin-bottom: 20px; height: 1px; background: #c5c5c5; width: 100%; border: none; clear: both;
+}
+/*-----------------------------------------------------------------------------------*/
+/*	HELPER CLASSES
+/*-----------------------------------------------------------------------------------*/
+
+.remove-bottom {
+	margin-bottom: 0px;
+}
+
+
+.text-center {
+	text-align: center;
+}
+
+.view-background {
+	position: fixed; z-index: 9; top: 20px; right: 20px; background: #fff; border: none; line-height: 0; padding: 13px; border: 1px solid #c5c5c5;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	END HELPER CLASSES
+/*-----------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------*/
+/*	HEADER & NAV STYLES
+/*-----------------------------------------------------------------------------------*/
+
+#logo, nav a, header, #mobile-nav {
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+#logo {
+	font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-weight: 700; font-size: 45px; padding: 35px 20px 20px; line-height: 40px; background: #f5f5f5; border-bottom: 1px solid #c5c5c5;
+}
+
+#logo:hover {
+	background: #fff;
+}
+
+#logo a {
+	border: none;
+}
+
+#logo img {
+	margin-bottom: 13px; -webkit-filter: drop-shadow(1px 2px 0px #fff); filter: drop-shadow(1px 2px 0px #fff);
+}
+
+header {
+	position: absolute; top: 0; left: 0; display: block; width: 280px; z-index: 99; border-right: 1px solid #c5c5c5; min-height: 100% !important; background: #f5f5f5; box-shadow: 0px -1px 0px 1px #fff;
+}
+
+#mobile-nav {
+	background: #333; width: 100%; height: 40px; position: fixed; top: 0; left: 0; z-index: 99; display: none; cursor: pointer; text-align: center; color: #fff;
+}
+
+#mobile-nav h3 {
+	line-height: 38px;
+}
+
+#mobile-nav i {
+	font-size: 24px; text-shadow: 0px 1px 0px #000;position: absolute; top: 7px; left: 15px;
+}
+
+#mobile-nav img {
+	-webkit-filter: drop-shadow(1px 2px 1px #222); filter: drop-shadow(1px 2px 1px #222);
+}
+
+nav {
+	padding-bottom: 30px; background: #f5f5f5;
+}
+
+nav a {
+	display: block; padding: 5px 20px;
+}
+
+nav li:hover > a {
+	padding-left: 35px; color: #ed1849; border-color: #ed1849;
+}
+
+nav li {
+	position: relative; background: #fff;
+}
+
+nav ul > li:last-of-type a {
+	border-bottom: 1px solid #c5c5c5;
+}
+
+nav ul li ul {
+	display: none; position: absolute; left: 100%; min-width: 225px; top: -1px; z-index: 999; border: 1px solid #c5c5c5; box-shadow: 2px 2px 1px 0px rgba(40, 40, 40, 0.5);
+}
+
+nav ul li ul li:last-child a {
+	border: none;
+}
+
+nav ul li:hover ul {
+	display: block;
+}
+
+.widget {
+	padding: 20px; border-bottom: 1px dotted #c5c5c5; background: #fff;
+}
+
+header .widget:last-child {
+	border-bottom: 1px solid #c5c5c5;
+}
+
+header .widget.first {
+	border-top: 1px solid #c5c5c5;
+	background:#333132;
+}
+
+.widget h6 {
+	font-size: 12px;
+}
+
+.widget p:last-child {
+	margin-bottom: 0;
+}
+
+.social a {
+	border-bottom: none; font-size: 20px; margin-right: 7px; color: #c5c5c5;
+}
+
+.filters {
+	padding: 0 20px 33px 40px; list-style: circle;
+}
+
+.filters li:hover, .filters li.active {
+	list-style: disc;
+}
+
+.filters li a {
+	border: none; position: relative; top: 2px;
+}
+
+.header-wrap {
+	position: relative; width: 279px;
+}
+
+
+.content {
+	width: 100%; padding-left: 280px; position: relative; left: 0px; opacity: 0;
+}
+
+.grid li {
+	float: left; width: 33.3%; position: relative;
+}
+
+.grid.portfolio li {
+	overflow: hidden;
+}
+
+.grid.portfolio li div, .more-hover div {
+	position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); display: none; color: #fff; text-align: center; border: 5px solid #000;
+}
+
+.grid.portfolio li a, .more-hover a {
+	display: block; width: 100%; height: 100%; color: #fff; border: none;
+}
+
+.grid.portfolio li a h4, .grid.portfolio li a p, .more-hover a h4, .more-hover a p {
+	position: relative; top: 50%; margin-top: -22px;
+}
+
+#loader {
+	overflow: hidden; width: 100%; position: relative;
+	-webkit-transition: background 300ms ease-in-out;
+	-moz-transition: background 300ms ease-in-out;
+	-ms-transition: background 300ms ease-in-out;
+	-o-transition: background 300ms ease-in-out;
+	transition: background 300ms ease-in-out;
+}
+
+.close i:nth-child(2) {
+	margin-left: -5px;
+}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	ISOTOPE
+/*-----------------------------------------------------------------------------------*/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	END ISOTOPE
+/*-----------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------*/
+/*	LOADING ANIMATION
+/*-----------------------------------------------------------------------------------*/
+
+#spinningSquaresG { position: absolute; width: 120px; height: 15px; margin: 0 auto; top: 50%; left: 50%; z-index: 9999; margin: -7px 0 0 -60px; }.spinningSquaresG{position:absolute;top:0;background-color:#444;width:15px;height:15px;-moz-animation-name:bounce_spinningSquaresG;-moz-animation-duration:1.3s;-moz-animation-iteration-count:infinite;-moz-animation-direction:linear;-moz-transform:scale(.3);-webkit-animation-name:bounce_spinningSquaresG;-webkit-animation-duration:1.3s;-webkit-animation-iteration-count:infinite;-webkit-animation-direction:linear;-webkit-transform:scale(.3);-ms-animation-name:bounce_spinningSquaresG;-ms-animation-duration:1.3s;-ms-animation-iteration-count:infinite;-ms-animation-direction:linear;-ms-transform:scale(.3);-o-animation-name:bounce_spinningSquaresG;-o-animation-duration:1.3s;-o-animation-iteration-count:infinite;-o-animation-direction:linear;-o-transform:scale(.3);animation-name:bounce_spinningSquaresG;animation-duration:1.3s;animation-iteration-count:infinite;animation-direction:linear;transform:scale(.3)}#spinningSquaresG_1{left:0;-moz-animation-delay:.52s;-webkit-animation-delay:.52s;-ms-animation-delay:.52s;-o-animation-delay:.52s;animation-delay:.52s}#spinningSquaresG_2{left:15px;-moz-animation-delay:.65s;-webkit-animation-delay:.65s;-ms-animation-delay:.65s;-o-animation-delay:.65s;animation-delay:.65s}#spinningSquaresG_3{left:30px;-moz-animation-delay:.78s;-webkit-animation-delay:.78s;-ms-animation-delay:.78s;-o-animation-delay:.78s;animation-delay:.78s}#spinningSquaresG_4{left:45px;-moz-animation-delay:.91s;-webkit-animation-delay:.91s;-ms-animation-delay:.91s;-o-animation-delay:.91s;animation-delay:.91s}#spinningSquaresG_5{left:60px;-moz-animation-delay:1.04s;-webkit-animation-delay:1.04s;-ms-animation-delay:1.04s;-o-animation-delay:1.04s;animation-delay:1.04s}#spinningSquaresG_6{left:75px;-moz-animation-delay:1.17s;-webkit-animation-delay:1.17s;-ms-animation-delay:1.17s;-o-animation-delay:1.17s;animation-delay:1.17s}#spinningSquaresG_7{left:90px;-moz-animation-delay:1.3s;-webkit-animation-delay:1.3s;-ms-animation-delay:1.3s;-o-animation-delay:1.3s;animation-delay:1.3s}#spinningSquaresG_8{left:105px;-moz-animation-delay:1.43s;-webkit-animation-delay:1.43s;-ms-animation-delay:1.43s;-o-animation-delay:1.43s;animation-delay:1.43s}@-moz-keyframes bounce_spinningSquaresG{0%{-moz-transform:scale(1);background-color:#444}100%{-moz-transform:scale(.3) rotate(90deg);background-color:#FFF}}@-webkit-keyframes bounce_spinningSquaresG{0%{-webkit-transform:scale(1);background-color:#444}100%{-webkit-transform:scale(.3) rotate(90deg);background-color:#FFF}}@-ms-keyframes bounce_spinningSquaresG{0%{-ms-transform:scale(1);background-color:#444}100%{-ms-transform:scale(.3) rotate(90deg);background-color:#FFF}}@-o-keyframes bounce_spinningSquaresG{0%{-o-transform:scale(1);background-color:#444}100%{-o-transform:scale(.3) rotate(90deg);background-color:#FFF}}@keyframes bounce_spinningSquaresG{0%{transform:scale(1);background-color:#444}100%{transform:scale(.3) rotate(90deg);background-color:#FFF}}
+
+/*-----------------------------------------------------------------------------------*/
+/*	END LOADING ANIMATION
+/*-----------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------*/
+/*	RESPONSIVE STYLES
+/*-----------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 1600px) {
+
+	ul.grid li {
+		width: 24.95%;
+	}
+
+}
+
+@media only screen and (min-width: 1180px) {
+
+	.wrapper { 
+		width:1180px; position:relative;
+	}
+	
+}
+
+@media only screen and (max-width: 1180px) {
+
+	ul.grid li {
+		width: 49.9%;
+	}
+
+}
+
+/* Standard 960 or larger (browsers) */
+@media only screen and (min-width: 960px) {}
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 860px) {
+	
+	header {
+		left: -280px; min-height: 100%;
+	}
+	
+	header.active {
+		left: 0;
+	}
+	
+	.content {
+		padding: 40px 0 0 0;
+	}
+	
+	#mobile-nav {
+		display: block;
+	}
+	
+	#mobile-nav.active {
+		left: 280px;
+	}
+	
+	ul.grid li {
+		width: 49.9%;
+	}
+	
+	nav ul li ul {
+		display: block; position: static; border: none; box-shadow: none;
+	}
+	
+	nav ul li ul li {
+		text-indent: 35px;
+	}
+	
+	nav ul li ul li:last-child a { 
+		border-bottom: 1px dotted #c5c5c5;
+	}
+	
+	nav ul li ul li a {
+		padding-left: 0;
+	}
+	
+	h2 {
+		font-size: 26px;
+	}
+	
+	figure h2 {
+		margin-top: -35px;
+	}
+	
+	
+	article {
+		padding: 5%;
+	}
+	
+	.view-background {
+		top: 60px; position: absolute;
+	}
+	
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+	.wrapper { 
+		width:768px; position:relative;
+	}
+	
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	
+	.wrapper { width:90%; margin: 5%; position:relative; padding: 40px; }
+	.one_half, .one_third, .two_thirds, .one_fourth, .one_fifth, .two_fifth, .three_fifth, .four_fifth, .one_sixth, .five_sixth, .three_fourths { width: 100%; }
+	
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+@media only screen and (max-width: 600px) {
+	ul.grid li, ul.grid.blog li {
+		width: 100%;
+	}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	
+	.gallery.horizontal li .gallery-details {
+		width: auto; left: 50px; right: 50px;
+	}
+	
+	.gallery-details .center {
+		position: relative; top: 0; margin-top: 35px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	
+	.gallery-details .center {
+		position: relative; top: 0; margin-top: 10px;
+	}
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	END RESPONSIVE STYLING
+/*-----------------------------------------------------------------------------------*/
